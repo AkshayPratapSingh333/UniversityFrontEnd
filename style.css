@@ -1,0 +1,151 @@
+*{
+
+    margin:0px;
+    padding: 0px;
+   }
+   .header{
+      height: 100vh;
+      width: 100%;
+      background-image:linear-gradient(rgba(197, 189, 189, 0.7),rgba(228, 240, 247, 0.7)) ,url('images/Universityimg.jpg');
+      background-size: cover;  
+      background-repeat: no-repeat; 
+      background-position: center;
+                
+
+   }
+   nav{
+      display: flex;
+      padding: 1% 2%;
+      justify-content: space-between;
+      align-items: center;
+   }
+   nav img{
+      width: 250px;
+      height: 250px;
+      margin: 8px 0 8px;
+      object-position:-50px -50px;
+      background-size: cover;
+   
+   }
+   .nav-links{
+      flex: 1;
+      text-align: right;
+   }
+   .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 10px 10px;
+      position: relative;
+      margin: 10px;
+      margin-bottom: 20%;
+      object-position:-10px -20px;
+   }
+   .nav-links ul li a{
+
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 15px;
+      font-family:"Gill Sans", sans-serif;
+      
+      
+   }
+
+   .nav-links ul li::after{
+      content: '';
+      width: 0;
+      height: 1px;
+      background: #43424b;
+      display: block;
+      margin: auto;
+      transition: 1.5s;
+      
+   }
+   .nav-links ul li:hover::after{
+      width: 100%;  
+   }
+   .textbox{
+      color: rgb(245, 245, 245);
+      text-decoration: none;
+      /* font-size: 12px; */
+      font-family: "Times New Roman", Times, serif;
+      width: 90%;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      text-align: center;
+      
+   }
+   .textbox h1{
+      font-size: 40px;
+      color: rgb(112, 5, 2);
+      
+      
+
+   }
+   .textbox p{
+      color: rgb(0, 0, 0);
+      font-size: 17px;
+      margin: 60px 0 90px;
+      
+      
+      /*  top 10px ,0 from left and right and 30 px from bottom */
+      
+   }
+
+   .button{
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      border: 1px solid #0f0e0e;
+      padding: 10px 10px;
+      font-size: 12px;
+      position: relative;
+      cursor: pointer;
+
+   }
+   .button:hover{
+      background-color: #2a17be;
+      transition: 1s;
+      position: relative; 
+
+   }
+ header span {
+    display: none;
+}   
+
+@media(max-width:500px){
+.textbox h1{
+      font-size: 13px;
+      
+   }
+   
+   .nav-links ul li{
+      display: block;
+
+   }
+   .nav-links{
+      position: absolute;
+      background-color: #e13f3f;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+   }
+   nav.fa{
+      display: block;
+      color: #ffffff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+   }
+   .nav-links ul{
+      padding: 30px;
+      
+   }
+   
+
+}         
+
