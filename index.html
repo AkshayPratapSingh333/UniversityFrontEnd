@@ -12,10 +12,8 @@
     <section class="header">
         <nav>
             <a href="index.html" id="lOGO"><img src="images/univerlogo.png"></a>
-            <div class="nav-links">
-                <span class="material-symbols-outlined">
-                    close
-                    </span>
+            <div class="nav-links" id="navlinks">
+                <span class="material-symbols-outlined" onclick="hidemenu()">close</span>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -24,9 +22,7 @@
                     <li><a href="">CONTACTS</a></li>
                 </ul>
             </div>
-            <span class="material-symbols-outlined">
-                Menu
-                </span>
+            <span class="material-symbols-outlined" onclick="showmenu()">Menu</span>
         </nav>
         <div class="textbox">
          <h1>Internet Research And Development University</h1>
@@ -38,6 +34,28 @@
         </div>
    
     </section>
-    
+    <!-- Course -->
+     <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Open Source Intelligence (OSINT) encompasses a broad spectrum of courses designed to equip individuals with the skills to gather, analyze, and utilize publicly available information effectively. Courses typically begin with an introduction to OSINT, covering its basics, applications, and legal and ethical considerations. Advanced topics include the use of specialized OSINT tools and techniques, data collection, web scraping, and mining. Social Media Intelligence (SOCMINT) focuses on extracting and analyzing information from social media platforms. Cybersecurity and threat intelligence courses teach how to use OSINT for detecting and mitigating cyber threats. Geospatial Intelligence (GEOINT) involves gathering and analyzing geospatial data, utilizing satellite imagery, and mapping tools for applications in defense and disaster response. Courses also delve into the dark web and deep web analysis, navigating and extracting information ethically. Investigative techniques cover background checks and journalism methods, supplemented by data analysis and visualization courses for handling large datasets and presenting findings effectively. Law enforcement and intelligence agency applications are explored through real-world case studies, highlighting best practices. Additionally, privacy and counter-OSINT courses focus on protecting personal information and understanding counter-OSINT methods.</p>
+     </section>
+
+
+
+
+
+
+    <!-- ----- Javascript for menu toggle---- -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+            
+        }
+    </script>
 </body>
 </html>

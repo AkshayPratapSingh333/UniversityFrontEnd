@@ -110,13 +110,13 @@
       position: relative; 
 
    }
- header span {
+   nav .material-symbols-outlined {
     display: none;
 }   
 
-@media(max-width:500px){
+@media(max-width:700px){
 .textbox h1{
-      font-size: 13px;
+      font-size: 14px;  
       
    }
    
@@ -126,26 +126,79 @@
    }
    .nav-links{
       position: absolute;
-      background-color: #e13f3f;
+      background-color: #193f90;
       height: 100vh;
-      width: 200px;
+      width: 150px;
       top: 0;
-      right: 0;
+      right: -150px;
       text-align: left;
       z-index: 2;
+      transition: 1s;
    }
-   nav.fa{
+
+   
+   .nav-links ul{
+      padding: 20px;
+
+   }
+   nav .material-symbols-outlined{
       display: block;
       color: #ffffff;
-      margin: 10px;
-      font-size: 22px;
+      float: right;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      font-size: 12px;
       cursor: pointer;
-   }
-   .nav-links ul{
-      padding: 30px;
+      margin:  10px 0 10px;
       
    }
-   
+   .textbox p{
+      color: rgb(0, 0, 0);
+      font-size: 8px;
+      margin: 8px 8px;
+   }
+   nav img{
+      width: 100px;
+      height: 100px;
+      margin: 2px 0 2px;
+      object-position:-20px -20px;
+      background-size: cover
+   }
+   .button{
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      border: 1px solid #0f0e0e;
+      padding: 6px 6px;
+      margin: 10px 10px;
+      font-size:5px;
+      position: relative;
+      cursor: pointer;
+
+   }
+   .button:hover{
+      background-color: #2a17be;
+      transition: 1s;
+      position: relative;
+   }
+   .nav-links ul li a{
+      font-size: 10px;
+   }
+
+
 
 }         
+/* Section 2 of Courses */
+.course{
+   
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 70px;
+}
+h1{
+   font-size: 36px;
+   font-weight: 600;
+}
 
