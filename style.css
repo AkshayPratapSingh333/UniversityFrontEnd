@@ -772,8 +772,8 @@ h3{
    .sub-header{
       width:100%;
    }
-   .sub-header h1{
-      font-size: 15px;
+   .sub-header head{
+      font-size:5px;
    }
    .blogs{
       width: 100%;
@@ -798,12 +798,10 @@ h3{
    padding:12px 7px;
 
 }
+.sub-header h1{
+   font-size: 15px;
+   text-align: center;
+}
 
 }
 /* -----------------------contact media query------- */
-@media(max-width:320px){
-   .sub-header h1{
-      font-size: 25px;
-   }
-
-}
